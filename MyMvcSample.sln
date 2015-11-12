@@ -3,7 +3,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMvcSample", "MyMvcSample\MyMvcSample.csproj", "{6206F18F-210C-4CF2-82B2-999C2A39AC44}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-プレゼンテーション層", "1-プレゼンテーション層", "{B75C0FC2-56B5-4FCE-A3B2-07C3CD95D760}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-アプリケーション層", "2-アプリケーション層", "{77EAB26F-D1DA-4FEF-931C-49B823F9B3A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-ドメイン層", "3-ドメイン層", "{2A130BBC-7347-4FAE-8290-14F3F5D2BC86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-インフラ層", "4-インフラ層", "{3AB20D97-BCC9-4EB1-B1C6-B9A93A8C384D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1-データ", "4.1-データ", "{26482DF0-836C-470C-A76B-8F7E21F3E1EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2-クロスカッティング", "4.2-クロスカッティング", "{1FC2EB02-3A3A-48EF-A00F-1C2016DDC0DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7FCF0FC3-EC2E-402F-BF83-FC19EAB7FDDC}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMvcSample.Application", "MyMvcSample.Application\MyMvcSample.Application.csproj", "{54850FC8-4CB3-4843-BD05-7B3204A5017C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMvcSample.Domain", "MyMvcSample.Domain\MyMvcSample.Domain.csproj", "{B2F533CD-CCEC-4FF0-A968-076D2CE75867}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMvcSample.Data.Context", "MyMvcSample.Data.Context\MyMvcSample.Data.Context.csproj", "{74F7242C-489D-444A-A199-373B2DF32BBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMvcSample.Data.Repository", "MyMvcSample.Data.Repository\MyMvcSample.Data.Repository.csproj", "{A7DAD63D-08F0-40DE-8A1A-6953B46D110A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMvcSample.CrossCutting.IoC", "MyMvcSample.CrossCutting.IoC\MyMvcSample.CrossCutting.IoC.csproj", "{5AF3019B-365E-46B0-A4FE-2E790DB30784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMvcSample.Web", "MyMvcSample.Web\MyMvcSample.Web.csproj", "{6206F18F-210C-4CF2-82B2-999C2A39AC44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +40,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54850FC8-4CB3-4843-BD05-7B3204A5017C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54850FC8-4CB3-4843-BD05-7B3204A5017C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54850FC8-4CB3-4843-BD05-7B3204A5017C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54850FC8-4CB3-4843-BD05-7B3204A5017C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2F533CD-CCEC-4FF0-A968-076D2CE75867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2F533CD-CCEC-4FF0-A968-076D2CE75867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2F533CD-CCEC-4FF0-A968-076D2CE75867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2F533CD-CCEC-4FF0-A968-076D2CE75867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F7242C-489D-444A-A199-373B2DF32BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F7242C-489D-444A-A199-373B2DF32BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74F7242C-489D-444A-A199-373B2DF32BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74F7242C-489D-444A-A199-373B2DF32BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7DAD63D-08F0-40DE-8A1A-6953B46D110A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DAD63D-08F0-40DE-8A1A-6953B46D110A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DAD63D-08F0-40DE-8A1A-6953B46D110A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DAD63D-08F0-40DE-8A1A-6953B46D110A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF3019B-365E-46B0-A4FE-2E790DB30784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF3019B-365E-46B0-A4FE-2E790DB30784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF3019B-365E-46B0-A4FE-2E790DB30784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF3019B-365E-46B0-A4FE-2E790DB30784}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6206F18F-210C-4CF2-82B2-999C2A39AC44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6206F18F-210C-4CF2-82B2-999C2A39AC44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6206F18F-210C-4CF2-82B2-999C2A39AC44}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -18,5 +67,15 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{26482DF0-836C-470C-A76B-8F7E21F3E1EF} = {3AB20D97-BCC9-4EB1-B1C6-B9A93A8C384D}
+		{1FC2EB02-3A3A-48EF-A00F-1C2016DDC0DA} = {3AB20D97-BCC9-4EB1-B1C6-B9A93A8C384D}
+		{54850FC8-4CB3-4843-BD05-7B3204A5017C} = {77EAB26F-D1DA-4FEF-931C-49B823F9B3A0}
+		{B2F533CD-CCEC-4FF0-A968-076D2CE75867} = {2A130BBC-7347-4FAE-8290-14F3F5D2BC86}
+		{74F7242C-489D-444A-A199-373B2DF32BBE} = {26482DF0-836C-470C-A76B-8F7E21F3E1EF}
+		{A7DAD63D-08F0-40DE-8A1A-6953B46D110A} = {26482DF0-836C-470C-A76B-8F7E21F3E1EF}
+		{5AF3019B-365E-46B0-A4FE-2E790DB30784} = {1FC2EB02-3A3A-48EF-A00F-1C2016DDC0DA}
+		{6206F18F-210C-4CF2-82B2-999C2A39AC44} = {B75C0FC2-56B5-4FCE-A3B2-07C3CD95D760}
 	EndGlobalSection
 EndGlobal
